@@ -1,0 +1,33 @@
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Raw or large data
+data_raw/
+*.tmp
+*.log
+
+# Secrets
+.env
+.env.*
+
+# Excel autosaves
+~$*.xlsx
+
+# Optional: large generated outputs
+*.csv
+!data_proc/*.csv  # keep processed CSVs you want to show
