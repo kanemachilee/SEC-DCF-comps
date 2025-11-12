@@ -1,24 +1,23 @@
-# SEC-Powered DCF & Comps Pack (TDOC, LH, DGX)
+SEC-Powered DCF & Comps Pack (TDOC, LH, DGX)
 
-This project builds a DCF and comparable companies model using official data from the **SEC, FRED, and Yahoo Finance**.  
-scripts are written in python on vs, with outputs automatically generated as a clean **Excel valuation pack**.
+This project builds a DCF and comparable companies model using official data from the SEC, FRED, and Yahoo Finance  
+scripts are written in python on vs, with outputs automatically generated
 
----
 
-## Project Overview
+
+Project Overview
 
 project goal: automate entire valuation pipeline from raw SEC filings to finished DCF model.
 
-program: Python (pandas, requests, yfinance, openpyxl), Excel, FRED API, SEC EDGAR XBRL.
+used program (pandas, requests, yfinance, openpyxl), Excel, FRED API, SEC EDGAR XBRL.
 
-**FOR DATA SOURCING:**
+for data sourcing:
 - SEC EDGAR API: Company financials (`companyfacts` JSON)
-- Yahoo Finance: Market prices
+- yahoo finance: Market prices
 - FRED: 10-Year Treasury yield for risk free rate
-- Damodaran Online: Industry ERP & beta references
+- damodaran Online: industry ERP & beta references
 
-
-1. **TO PULL FINANCIALS:**
+to pull financials:
    ```powershell
    python src\pull_sec_companyfacts.py
    python src\normalize_financials.py
